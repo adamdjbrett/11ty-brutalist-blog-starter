@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} | {% endif %}BRUTALIST</title>
+  <meta name="description" content="{% if description %}{{ description }}{% else %}A brutalist blog built with 11ty{% endif %}">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="/" class="site-title">BRUTALIST</a>
+        <nav class="site-nav">
+          <ul class="site-nav__list">
+            <li class="site-nav__item"><a href="/" class="site-nav__link {% if page.url === '/' %}active{% endif %}">HOME</a></li>
+            <li class="site-nav__item"><a href="/about/" class="site-nav__link {% if page.url === '/about/' %}active{% endif %}">ABOUT</a></li>
+            <li class="site-nav__item"><a href="/archive/" class="site-nav__link {% if page.url === '/archive/' %}active{% endif %}">ARCHIVE</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="content">
+      {{ content | safe }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>&copy; {{ '' | getYear }} BRUTALIST – Built with <a href="https://www.11ty.dev/">11ty</a></p>
+        <p class="site-footer__links">
+          <a href="/feed.xml">RSS</a>
+          <span class="separator">|</span>
+          <a href="https://github.com/yourusername">GitHub</a>
+          <span class="separator">|</span>
+          <a href="https://twitter.com/yourusername">Twitter</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

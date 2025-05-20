@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>BRUTALIST BLOG</title>
+  <subtitle>A raw, unfiltered journal of thoughts and ideas.</subtitle>
+  <link href="https://example.com/feed.xml" rel="self"/>
+  <link href="https://example.com"/>
+  <updated>2023-03-10T00:00:00Z</updated>
+  <id>https://example.com</id>
+  <author>
+    <name>Your Name</name>
+    <email>youremail@example.com</email>
+  </author>
+  
+  <entry>
+    <title>Creating Contrast in Brutalist Interfaces</title>
+    <link href="https://example.com/posts/third-post/"/>
+    <updated>2023-03-10T00:00:00Z</updated>
+    <id>https://example.com/posts/third-post/</id>
+    <content type="html">&lt;p&gt;Contrast is the lifeblood of brutalist design. Unlike the subtle, harmonious contrasts found in mainstream web design, brutalism embraces stark, sometimes jarring visual differences to create impact and direct attention.&lt;/p&gt;
+&lt;h2 id=&quot;black-and-white-the-ultimate-contrast&quot; tabindex=&quot;-1&quot;&gt;Black and White: The Ultimate Contrast &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/third-post/#black-and-white-the-ultimate-contrast&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The foundation of brutalist contrast is often a stark black-and-white palette. This binary approach creates maximum legibility and visual impact.&lt;/p&gt;
+&lt;h2 id=&quot;size-contrasts&quot; tabindex=&quot;-1&quot;&gt;Size Contrasts &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/third-post/#size-contrasts&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Brutalist design frequently employs extreme size differences:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tiny elements juxtaposed with massive ones&lt;/li&gt;
+&lt;li&gt;Disproportionately large headlines&lt;/li&gt;
+&lt;li&gt;Unexpected scaling that breaks conventional proportions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This creates visual tension and disrupts the comfortable, predictable flow of traditional interfaces.&lt;/p&gt;
+&lt;h2 id=&quot;spacing-as-contrast&quot; tabindex=&quot;-1&quot;&gt;Spacing as Contrast &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/third-post/#spacing-as-contrast&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;In brutalist design, white space isn&#39;t distributed evenly. Instead, it&#39;s used to create deliberate contrasts:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Dense clusters of information&lt;/li&gt;
+&lt;li&gt;Vast empty areas&lt;/li&gt;
+&lt;li&gt;Asymmetrical layouts that feel intentionally unbalanced&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;textural-contrasts&quot; tabindex=&quot;-1&quot;&gt;Textural Contrasts &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/third-post/#textural-contrasts&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Brutalism often mixes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pixel-perfect vector elements&lt;/li&gt;
+&lt;li&gt;Low-resolution imagery&lt;/li&gt;
+&lt;li&gt;Text-as-image&lt;/li&gt;
+&lt;li&gt;Rough, handmade elements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These textural contrasts emphasize the digital medium while rejecting the polished aesthetic of mainstream design.&lt;/p&gt;
+&lt;h2 id=&quot;functional-contrast&quot; tabindex=&quot;-1&quot;&gt;Functional Contrast &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/third-post/#functional-contrast&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Beyond visual contrast, brutalism emphasizes functional contrast—making interactive elements stand out not through subtle cues, but through bold, unmistakable visual differences.&lt;/p&gt;
+&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;button&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;brutalist-button&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  CLICK HERE
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;button&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;style&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token style&quot;&gt;&lt;span class=&quot;token language-css&quot;&gt;
+  &lt;span class=&quot;token selector&quot;&gt;.brutalist-button&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Courier New&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; monospace&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 24px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 16px 24px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #000&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #fff&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; pointer&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;transition&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; transform 0.1s&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  
+  &lt;span class=&quot;token selector&quot;&gt;.brutalist-button:hover&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;scale&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;1.05&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;style&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;conclusion&quot; tabindex=&quot;-1&quot;&gt;Conclusion &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/third-post/#conclusion&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Contrast in brutalist design isn&#39;t subtle—it&#39;s a primary design tool used to create impact, direct attention, and reject the homogenized aesthetics of contemporary web design. By embracing stark contrasts in color, size, spacing, and texture, brutalist interfaces create memorable experiences that stand out in a sea of sameness.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Typography in Brutalist Design</title>
+    <link href="https://example.com/posts/second-post/"/>
+    <updated>2023-02-20T00:00:00Z</updated>
+    <id>https://example.com/posts/second-post/</id>
+    <content type="html">&lt;p&gt;Typography in brutalist design isn&#39;t just about choosing fonts—it&#39;s about making a statement. Brutalist typography rejects the soft, friendly approach of modern web design in favor of stark contrasts and raw visual impact.&lt;/p&gt;
+&lt;h2 id=&quot;monospace-dominance&quot; tabindex=&quot;-1&quot;&gt;Monospace Dominance &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/second-post/#monospace-dominance&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Monospace fonts are a brutalist staple. Their uniform character width creates a rigid, mechanical appearance that aligns perfectly with brutalist principles.&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;pre&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Courier New&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; monospace&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #f0f0f0&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 24px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;overflow-x&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; auto&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 2px solid #000&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;hierarchical-contrast&quot; tabindex=&quot;-1&quot;&gt;Hierarchical Contrast &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/second-post/#hierarchical-contrast&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Brutalist typography often features extreme size contrasts between headings and body text. This creates a visual hierarchy that&#39;s impossible to ignore:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Massive headings (48pt+)&lt;/li&gt;
+&lt;li&gt;Standard body text (16pt)&lt;/li&gt;
+&lt;li&gt;Tiny footnotes (8pt)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;technical-aesthetic&quot; tabindex=&quot;-1&quot;&gt;Technical Aesthetic &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/second-post/#technical-aesthetic&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The technical, almost &amp;quot;undesigned&amp;quot; look of brutalist typography evokes computer terminals and early digital interfaces. This aesthetic celebrates the digital medium rather than trying to mimic print design.&lt;/p&gt;
+&lt;h2 id=&quot;alignment-and-spacing&quot; tabindex=&quot;-1&quot;&gt;Alignment and Spacing &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/second-post/#alignment-and-spacing&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Brutalist typography often uses:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Hard left alignment&lt;/li&gt;
+&lt;li&gt;Deliberate use of monospace to create grid-like structures&lt;/li&gt;
+&lt;li&gt;Unconventional spacing that creates tension&lt;/li&gt;
+&lt;li&gt;Lack of hyphenation, allowing lines to break naturally&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;conclusion&quot; tabindex=&quot;-1&quot;&gt;Conclusion &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/second-post/#conclusion&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Typography in brutalist design isn&#39;t an afterthought—it&#39;s a core component of the aesthetic. By embracing monospace fonts, extreme contrast, and technical characteristics, brutalist typography creates a distinctive visual language that stands in opposition to the homogenized design trends of the mainstream web.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>The Essence of Brutalism in Web Design</title>
+    <link href="https://example.com/posts/first-post/"/>
+    <updated>2023-01-15T00:00:00Z</updated>
+    <id>https://example.com/posts/first-post/</id>
+    <content type="html">&lt;p&gt;Brutalism in web design is characterized by its raw, unfiltered aesthetic. It&#39;s a deliberate rejection of the polished, user-friendly interfaces that dominate the digital landscape today.&lt;/p&gt;
+&lt;h2 id=&quot;origins-of-brutalism&quot; tabindex=&quot;-1&quot;&gt;Origins of Brutalism &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/first-post/#origins-of-brutalism&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The term &amp;quot;brutalism&amp;quot; comes from the French word &amp;quot;brut,&amp;quot; meaning &amp;quot;raw.&amp;quot; It was originally used to describe a style of architecture that emerged in the 1950s, characterized by its use of exposed concrete (béton brut) and functional design.&lt;/p&gt;
+&lt;p&gt;In web design, brutalism embraces the following principles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Raw, unfiltered design&lt;/li&gt;
+&lt;li&gt;Rejection of user-friendly conventions&lt;/li&gt;
+&lt;li&gt;Deliberate lack of refinement&lt;/li&gt;
+&lt;li&gt;High contrast and bold typography&lt;/li&gt;
+&lt;li&gt;Function over form&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;why-choose-brutalism&quot; tabindex=&quot;-1&quot;&gt;Why Choose Brutalism? &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/first-post/#why-choose-brutalism&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;In an era of cookie-cutter websites and homogenized design patterns, brutalism offers a refreshing alternative. It&#39;s a statement against the sanitized, corporate aesthetic that dominates the web.&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* Example of brutalist CSS */&lt;/span&gt;
+&lt;span class=&quot;token selector&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Courier New&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; monospace&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 100%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #fff&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #000&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 8px solid #000&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token selector&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 4rem&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;text-transform&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; uppercase&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;letter-spacing&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; -2px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;implementing-brutalist-design&quot; tabindex=&quot;-1&quot;&gt;Implementing Brutalist Design &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/first-post/#implementing-brutalist-design&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;To create a brutalist website, consider the following approaches:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Embrace raw typography:&lt;/strong&gt; Use monospace fonts, mix sizes dramatically, and don&#39;t be afraid of contrast.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reject conventional layouts:&lt;/strong&gt; Break the grid, overlap elements, and use unconventional spacing.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use high contrast:&lt;/strong&gt; Black and white with occasional primary colors creates the stark contrast characteristic of brutalism.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Expose the structure:&lt;/strong&gt; Don&#39;t hide the bones of your website—celebrate them.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Be direct and honest:&lt;/strong&gt; Brutalism values straightforward communication over marketing polish.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;Good design is as little design as possible.&amp;quot; — Dieter Rams&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This quote, while from a minimalist designer, also applies to brutalism&#39;s focus on function and honesty.&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot; tabindex=&quot;-1&quot;&gt;Conclusion &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/first-post/#conclusion&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Brutalism isn&#39;t for every project, but it offers a powerful way to stand out in today&#39;s homogenized digital landscape. By embracing raw aesthetics and functional design, brutalist websites create memorable, distinctive experiences that reject the bland conformity of contemporary web design.&lt;/p&gt;
+&lt;p&gt;Remember: in brutalism, the rawness isn&#39;t a bug—it&#39;s a feature.&lt;/p&gt;
+</content>
+  </entry>
+</feed>

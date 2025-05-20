@@ -1,0 +1,32 @@
+---
+layout: base
+title: Archive
+description: All posts in chronological order
+eleventyNavigation:
+  key: Archive
+  order: 3
+---
+
+<div class="archive">
+  <h1 class="archive__title">ARCHIVE</h1>
+  
+  {% set postslist = collections.posts %}
+  {% set postslistCounter = postslist | length %}
+  
+  {% set currentYear = "" %}
+  {% for post in postslist | reverse %}
+    {% set postYear = post.date | readableDate | truncate(4, true, "") %}
+    
+    {% if currentYear != postYear %}
+      {% set currentYear = postYear %}
+      <h2 class="archive__year">{{ currentYear }}</h2>
+    {% endif %}
+    
+    <article class="posts__item">
+      <a href="{{ post.url }}" class="posts__link">
+        <span class="posts__title">{{ post.data.title }}</span>
+        <time class="posts__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      </a>
+    </article>
+  {% endfor %}
+</div>

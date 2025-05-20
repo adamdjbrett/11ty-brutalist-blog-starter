@@ -1,0 +1,27 @@
+{
+  "name": "brutalist-blog",
+  "version": "1.0.0",
+  "description": "A brutalist blog built with 11ty",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "keywords": [
+    "blog",
+    "eleventy",
+    "brutalist"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "luxon": "^3.4.4",
+    "markdown-it": "^14.0.0",
+    "markdown-it-anchor": "^8.6.7"
+  }
+}

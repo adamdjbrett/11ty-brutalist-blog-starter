@@ -1,0 +1,72 @@
+---
+layout: base
+title: Tags
+description: Browse all content tags
+permalink: /tags/
+eleventyNavigation:
+  key: Tags
+  order: 4
+---
+
+<div class="tags-page">
+  <h1 class="tags-page__title">TAGS</h1>
+  
+  <ul class="tags-list">
+    {% for tag in collections.tagList | sort %}
+      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+      <li class="tags-list__item">
+        <a href="{{ tagUrl }}" class="tags-list__link">
+          <span class="tags-list__name">#{{ tag }}</span>
+          <span class="tags-list__count">{{ collections[tag].length }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<style>
+  .tags-page__title {
+    margin-bottom: var(--spacing-l);
+    border-bottom: 2px solid var(--color-black);
+    padding-bottom: var(--spacing-xs);
+  }
+  
+  .tags-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--spacing-m);
+  }
+  
+  .tags-list__item {
+    margin-bottom: 0;
+  }
+  
+  .tags-list__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-s);
+    border: 2px solid var(--color-black);
+    background-color: var(--color-gray-light);
+    transition: all 0.2s ease;
+  }
+  
+  .tags-list__link:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+  
+  .tags-list__count {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+  }
+  
+  .tags-list__link:hover .tags-list__count {
+    background-color: var(--color-accent);
+  }
+</style>

@@ -1,0 +1,10 @@
+{
+  "title": "BRUTALIST BLOG",
+  "description": "A raw, unfiltered journal of thoughts and ideas.",
+  "url": "https://example.com",
+  "language": "en",
+  "author": {
+    "name": "Your Name",
+    "email": "youremail@example.com"
+  }
+}

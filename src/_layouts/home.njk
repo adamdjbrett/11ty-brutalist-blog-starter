@@ -1,0 +1,52 @@
+---
+layout: base
+---
+
+<div class="home">
+  <header class="home__header">
+    <h1 class="home__title">{{ title }}</h1>
+    {% if description %}
+      <p class="home__description">{{ description }}</p>
+    {% endif %}
+  </header>
+
+  <div class="featured-posts">
+    {% set featuredPosts = collections.featuredPosts | head(1) %}
+    {% if featuredPosts.length > 0 %}
+      {% set featuredPost = featuredPosts[0] %}
+      <article class="featured-post">
+        <div class="featured-post__content">
+          <h2 class="featured-post__title">
+            <a href="{{ featuredPost.url }}">{{ featuredPost.data.title }}</a>
+          </h2>
+          <div class="featured-post__meta">
+            <time datetime="{{ featuredPost.date | htmlDateString }}">{{ featuredPost.date | readableDate }}</time>
+          </div>
+          <div class="featured-post__excerpt">
+            {% if featuredPost.data.description %}
+              <p>{{ featuredPost.data.description }}</p>
+            {% endif %}
+          </div>
+          <a href="{{ featuredPost.url }}" class="featured-post__link">READ MORE →</a>
+        </div>
+      </article>
+    {% endif %}
+  </div>
+
+  <div class="posts">
+    <h2 class="posts__heading">LATEST POSTS</h2>
+    <ul class="posts__list">
+      {%- for post in collections.posts | head(5) -%}
+        <li class="posts__item">
+          <a href="{{ post.url }}" class="posts__link">
+            <span class="posts__title">{{ post.data.title }}</span>
+            <time class="posts__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+    <div class="posts__more">
+      <a href="/archive/" class="btn">VIEW ALL POSTS</a>
+    </div>
+  </div>
+</div>

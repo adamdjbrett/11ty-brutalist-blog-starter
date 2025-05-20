@@ -1,0 +1,46 @@
+---
+layout: base
+---
+
+<article class="post">
+  <header class="post__header">
+    <h1 class="post__title">{{ title }}</h1>
+    <div class="post__meta">
+      <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+      {% if tags %}
+        <div class="post__tags">
+          {% for tag in tags %}
+            {% if tag !== "posts" %}
+              <a href="/tags/{{ tag }}/" class="post__tag">#{{ tag }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="post__content">
+    {{ content | safe }}
+  </div>
+
+  <footer class="post__footer">
+    <div class="post__navigation">
+      {%- set previousPost = collections.posts | getPreviousCollectionItem %}
+      {%- set nextPost = collections.posts | getNextCollectionItem %}
+      
+      <div class="post__prev">
+        {% if previousPost %}
+          <span>Previous</span>
+          <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+        {% endif %}
+      </div>
+      
+      <div class="post__next">
+        {% if nextPost %}
+          <span>Next</span>
+          <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </footer>
+</article>

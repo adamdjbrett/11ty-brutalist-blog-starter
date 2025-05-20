@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tags | BRUTALIST</title>
+  <meta name="description" content="Browse all content tags">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="/" class="site-title">BRUTALIST</a>
+        <nav class="site-nav">
+          <ul class="site-nav__list">
+            <li class="site-nav__item"><a href="/" class="site-nav__link ">HOME</a></li>
+            <li class="site-nav__item"><a href="/about/" class="site-nav__link ">ABOUT</a></li>
+            <li class="site-nav__item"><a href="/archive/" class="site-nav__link ">ARCHIVE</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="content">
+      
+<div class="tags-page">
+  <h1 class="tags-page__title">TAGS</h1>
+  
+  <ul class="tags-list">
+    
+      
+      <li class="tags-list__item">
+        <a href="/tags/brutalism/" class="tags-list__link">
+          <span class="tags-list__name">#brutalism</span>
+          <span class="tags-list__count">3</span>
+        </a>
+      </li>
+    
+      
+      <li class="tags-list__item">
+        <a href="/tags/contrast/" class="tags-list__link">
+          <span class="tags-list__name">#contrast</span>
+          <span class="tags-list__count">1</span>
+        </a>
+      </li>
+    
+      
+      <li class="tags-list__item">
+        <a href="/tags/design/" class="tags-list__link">
+          <span class="tags-list__name">#design</span>
+          <span class="tags-list__count">3</span>
+        </a>
+      </li>
+    
+      
+      <li class="tags-list__item">
+        <a href="/tags/typography/" class="tags-list__link">
+          <span class="tags-list__name">#typography</span>
+          <span class="tags-list__count">1</span>
+        </a>
+      </li>
+    
+      
+      <li class="tags-list__item">
+        <a href="/tags/web/" class="tags-list__link">
+          <span class="tags-list__name">#web</span>
+          <span class="tags-list__count">1</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+<style>
+  .tags-page__title {
+    margin-bottom: var(--spacing-l);
+    border-bottom: 2px solid var(--color-black);
+    padding-bottom: var(--spacing-xs);
+  }
+  
+  .tags-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--spacing-m);
+  }
+  
+  .tags-list__item {
+    margin-bottom: 0;
+  }
+  
+  .tags-list__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-s);
+    border: 2px solid var(--color-black);
+    background-color: var(--color-gray-light);
+    transition: all 0.2s ease;
+  }
+  
+  .tags-list__link:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+  
+  .tags-list__count {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+  }
+  
+  .tags-list__link:hover .tags-list__count {
+    background-color: var(--color-accent);
+  }
+</style>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>&copy; 2025 BRUTALIST – Built with <a href="https://www.11ty.dev/">11ty</a></p>
+        <p class="site-footer__links">
+          <a href="/feed.xml">RSS</a>
+          <span class="separator">|</span>
+          <a href="https://github.com/yourusername">GitHub</a>
+          <span class="separator">|</span>
+          <a href="https://twitter.com/yourusername">Twitter</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

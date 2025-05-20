@@ -1,0 +1,49 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - post
+    - posts
+    - tagList
+  addAllPagesToCollections: true
+layout: base
+eleventyComputed:
+  title: "Tagged: #{{ tag }}"
+permalink: /tags/{{ tag }}/
+---
+
+<div class="tag-page">
+  <h1 class="tag-page__title">POSTS TAGGED <span class="tag-highlight">#{{ tag }}</span></h1>
+
+  {% set postslist = collections[tag] %}
+  {% for post in postslist | reverse %}
+    <article class="posts__item">
+      <a href="{{ post.url }}" class="posts__link">
+        <span class="posts__title">{{ post.data.title }}</span>
+        <time class="posts__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      </a>
+    </article>
+  {% endfor %}
+
+  <p class="tag-page__back"><a href="/tags/" class="btn">VIEW ALL TAGS</a></p>
+</div>
+
+<style>
+  .tag-highlight {
+    color: var(--color-accent);
+  }
+  
+  .tag-page__title {
+    margin-bottom: var(--spacing-l);
+    border-bottom: 2px solid var(--color-black);
+    padding-bottom: var(--spacing-xs);
+  }
+  
+  .tag-page__back {
+    margin-top: var(--spacing-xl);
+  }
+</style>
