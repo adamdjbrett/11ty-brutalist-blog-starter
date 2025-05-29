@@ -19,10 +19,10 @@
 <link href="/img/logo.png" rel="icon" type="image/x-icon">
 <link rel="apple-touch-icon" href="/img/logo.png">
 <meta content="" property="facebook:author">
-<meta content="" property="twitter:author">
-<meta content="" name="twitter:site">
+<meta content="nybrutalism.000000076.xyz" property="twitter:author">
+<meta content="nybrutalism.000000076.xyz" name="twitter:site">
 <meta property="og:type" content="website">
-<link rel="canonical" href="/tags/web/"/>
+<link rel="canonical" href="nybrutalism.000000076.xyz/tags/web/"/>
 <link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="BRUTALIST BLOG">
 <meta name="language" content="en">
 <meta name="locale" content="en_US">
@@ -70,6 +70,12 @@ Github
 </a>
 </li>
 
+<li class="site-nav__item">
+<button id="theme-toggle" aria-label="Toggle dark/light mode" style="margin-left: 1rem; border: 2px solid var(--color-black); background: var(--color-gray-light); color: var(--color-black); font-family: inherit; padding: 0.4em 1em; cursor: pointer;">
+  🌙 Dark Mode
+</button>
+
+</li>
 </ul>
 </nav>
 </div>
@@ -117,5 +123,38 @@ Github
 </div>
 </footer>
 </div>
+<script>
+const themeBtn = document.getElementById('theme-toggle');
+const root = document.documentElement;
+
+// Load preference
+if (localStorage.getItem('theme')) {
+  root.setAttribute('data-theme', localStorage.getItem('theme'));
+  updateButtonText();
+}
+
+themeBtn.addEventListener('click', function() {
+  let currentTheme = root.getAttribute('data-theme');
+  if (currentTheme === 'dark') {
+    root.setAttribute('data-theme', 'light');
+    localStorage.setItem('theme', 'light');
+  } else {
+    root.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+  }
+  updateButtonText();
+});
+
+// Update text/icon
+function updateButtonText() {
+  let theme = root.getAttribute('data-theme');
+  if (theme === 'dark') {
+    themeBtn.textContent = '☀️ Light Mode';
+  } else {
+    themeBtn.textContent = '🌙 Dark Mode';
+  }
+}
+</script>
+
 </body>
 </html>

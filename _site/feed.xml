@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>BRUTALIST BLOG</title>
   <subtitle>A raw, unfiltered journal of thoughts and ideas.</subtitle>
-  <link href="/feed.xml" rel="self"/>
-  <link href=""/>
+  <link href="nybrutalism.000000076.xyz/feed.xml" rel="self"/>
+  <link href="nybrutalism.000000076.xyz"/>
   <updated>2023-03-10T00:00:00Z</updated>
-  <id></id>
+  <id>nybrutalism.000000076.xyz</id>
   <author>
     <name>Your Name</name>
     <email>youremail@example.com</email>
