@@ -1,12 +1,11 @@
 ---
 layout: base
 ---
-
 <article class="post">
   <header class="post__header">
-    <h1 class="post__title">{{ title }}</h1>
+    <h1 class="post__title"><strong><a href="{{page.url}}">{{ title }}</a></strong></h1>
     <div class="post__meta">
-      <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+      {% if page.date %}<time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>{% endif %}
       {% if tags %}
         <div class="post__tags">
           {% for tag in tags %}

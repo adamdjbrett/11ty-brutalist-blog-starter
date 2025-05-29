@@ -1,4 +1,5 @@
 ---
+layout: post.njk
 title: The Essence of Brutalism in Web Design
 date: 2023-01-15
 tags: 

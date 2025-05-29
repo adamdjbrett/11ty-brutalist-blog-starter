@@ -5,6 +5,7 @@ const navigationPlugin = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const customNavigationPlugin = require('./eleventyNavigationPlugin.js');
+const yaml = require("js-yaml");
 
 module.exports = function(eleventyConfig) {
   // Plugins
@@ -22,7 +23,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("dd LLL yyyy");
   });
-
+eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });

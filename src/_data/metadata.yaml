@@ -1,0 +1,35 @@
+title: "BRUTALIST BLOG"
+description: "A raw, unfiltered journal of thoughts and ideas."
+image: "/assets/images/logo.png"
+language: "en"
+locale: en_US
+favicon: /img/logo.png
+url: ""
+metasocial:
+  - facebook: "https://www.facebook.com/"
+  - twitteruser: "@username"
+  - twitter: "https://x.com/user"
+navbar:
+  title: "BRUTALIST"
+  list:
+    - nav: Home
+      url: /
+    - nav: About
+      url: /about
+    - nav: Blog
+      url: /blog
+    - nav: Github
+      url: https://github.com/adamdjbrett/11ty-brutalist-blog-starter
+footer: 
+  title: "BRUTALIST"
+  list: 
+    - nav: RSS
+      url: /feed.xml
+    - nav: Github
+      url: https://github.com/adamdjbrett/11ty-brutalist-blog-starter
+    - nav: Twitter
+      url: /
+author:
+ name: "Your Name"
+ email: "youremail@example.com"
+

@@ -1,4 +1,5 @@
 ---
+layout: post.njk
 title: Creating Contrast in Brutalist Interfaces
 date: 2023-03-10
 tags: 
