@@ -13,7 +13,7 @@
     "eleventy",
     "brutalist"
   ],
-  "author": "",
+  "author": "Adam Dj Brett",
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
