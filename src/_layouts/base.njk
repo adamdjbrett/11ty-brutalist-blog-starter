@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if title %}{{ title }} | {% endif %}BRUTALIST</title>
-  <meta name="description" content="{% if description %}{{ description }}{% else %}A brutalist blog built with 11ty{% endif %}">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="stylesheet" href="/css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title or metadata.title}}</title>
+<meta content="{{title or metadata.title}}" property="og:title">
+<meta content="{{title or metadata.title}}" name="twitter:title">
+<meta content="{{title or metadata.title}}" name="title">
+<meta content="{{title or metadata.title}}" property="og:site_name">
+<meta content="{{description or metadata.description}}" name="description">
+<meta content="{{description or metadata.description}}" property="facebook:description">
+<meta content="{{description or metadata.description}}" property="og:description">
+<meta content="{{description or metadata.description}}" name="twitter:description">
+<meta property="twitter:card" content="summary_large_image">
+<meta content="{{image or metadata.metasocial.image}}" name="twitter:image">
+<meta content="{{image or metadata.metasocial.image}}" name="facebook:image">
+<meta content="{{image or metadata.metasocial.image}}" name="og:image">
+<link href="{{metadata.favicon}}" rel="icon" type="image/x-icon">
+<link rel="apple-touch-icon" href="{{metadata.favicon}}">
+<meta content="{{metadata.metasocial.facebook}}" property="facebook:author">
+<meta content="{{metadata.metasocial.twitteruser or metadata.url}}" property="twitter:author">
+<meta content="{{metadata.metasocial.twitter or metadata.url}}" name="twitter:site">
+<meta property="og:type" content="website">
+<link rel="canonical" href="{{metadata.url}}{{page.url}}"/>
+<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+<meta name="language" content="{{metadata.language}}">
+<meta name="locale" content="{{metadata.locale}}">
+<meta property="og:locale" content="{{metadata.locale}}">
+<meta name="generator" content="{{ eleventy.generator }}"> 
+<link rel="stylesheet" href="/css/brutal.css">
 </head>
 <body>
-  <div class="container">
-    <header class="site-header">
-      <div class="site-header__inner">
-        <a href="/" class="site-title">BRUTALIST</a>
-        <nav class="site-nav">
-          <ul class="site-nav__list">
-            <li class="site-nav__item"><a href="/" class="site-nav__link {% if page.url === '/' %}active{% endif %}">HOME</a></li>
-            <li class="site-nav__item"><a href="/about/" class="site-nav__link {% if page.url === '/about/' %}active{% endif %}">ABOUT</a></li>
-            <li class="site-nav__item"><a href="/archive/" class="site-nav__link {% if page.url === '/archive/' %}active{% endif %}">ARCHIVE</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main class="content">
-      {{ content | safe }}
-    </main>
-
-    <footer class="site-footer">
-      <div class="site-footer__inner">
-        <p>&copy; {{ '' | getYear }} BRUTALIST – Built with <a href="https://www.11ty.dev/">11ty</a></p>
-        <p class="site-footer__links">
-          <a href="/feed.xml">RSS</a>
-          <span class="separator">|</span>
-          <a href="https://github.com/yourusername">GitHub</a>
-          <span class="separator">|</span>
-          <a href="https://twitter.com/yourusername">Twitter</a>
-        </p>
-      </div>
-    </footer>
-  </div>
+<div class="container">
+<header class="site-header">
+<div class="site-header__inner">
+<a href="/" class="site-title">{{metadata.navbar.title}}</a>
+<nav class="site-nav">
+<ul class="site-nav__list">
+{% for n in metadata.navbar.list %}
+{% set normalizedNavUrl = n.url | replace("/", "") %}
+{% set normalizedPageUrl = page.url | replace("/", "") %}
+<li class="site-nav__item">
+<a href="{{ n.url }}" class="site-nav__link {% if normalizedPageUrl == normalizedNavUrl %}active{% endif %}">
+{{ n.nav }}
+</a>
+</li>
+{% endfor %}
+</ul>
+</nav>
+</div>
+</header>
+<main class="content">
+{{ content | safe }}
+</main>
+<footer class="site-footer">
+<div class="site-footer__inner">
+<p>&copy; {{ '' | getYear }} {{metadata.footer.title}} – Built with <a href="https://www.11ty.dev/">11ty</a> - Develope by <a href="https://adamdjbrett.com">Adam Dj Brett</a></p>
+<p class="site-footer__links">
+{% for f in metadata.footer.list %}<a href="{{f.url}}">{{f.nav}}</a>{% endfor %}
+</p>
+</div>
+</footer>
+</div>
 </body>
 </html>

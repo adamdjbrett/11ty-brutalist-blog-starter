@@ -1,0 +1,16 @@
+---
+layout: base
+---
+<article class="post">
+<header class="post__header">
+ <h1 class="post__title"><strong>
+<a href="{{page.url}}">{{ title }}</a>
+</strong>
+</h1>
+  </header>
+
+  <div class="post__content">
+    {{ content | safe }}
+  </div>
+
+</article>

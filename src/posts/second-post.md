@@ -1,4 +1,5 @@
 ---
+layout: post.njk
 title: Typography in Brutalist Design
 date: 2023-02-20
 tags: 
