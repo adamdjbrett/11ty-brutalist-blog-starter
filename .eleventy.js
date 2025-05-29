@@ -1,3 +1,4 @@
+// This is the configuration file for 11ty (Eleventy) static site generator.
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -7,6 +8,7 @@ const markdownItAnchor = require("markdown-it-anchor");
 const customNavigationPlugin = require('./eleventyNavigationPlugin.js');
 const yaml = require("js-yaml");
 
+// Custom Eleventy configuration for the nybrutalism project
 module.exports = function(eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(syntaxHighlight);

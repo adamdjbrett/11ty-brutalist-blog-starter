@@ -1,6 +1,6 @@
 # Nybrutalism - Eleventy Brutalist template 
 
-A Starter Brutal Blog Style New Concept built with [11ty](https://11ty.dev) develope by [Adam DJ Brett](https://adamdjbrett.com)
+A Starter Brutal Blog Style New Concept built with [11ty](https://11ty.dev) Developed by [Adam DJ Brett](https://adamdjbrett.com)
 
 ## Need help or have project ?? 
 
