@@ -1,28 +1,52 @@
 {
-  "name": "brutalist-blog",
-  "version": "1.0.0",
-  "description": "A brutalist blog built with 11ty",
-  "main": "index.js",
-  "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy",
-    "clean": "rm -rf _site"
-  },
-  "keywords": [
-    "blog",
-    "eleventy",
-    "brutalist"
-  ],
-  "author": "Adam Dj Brett",
-  "license": "MIT",
-  "dependencies": {
-    "@11ty/eleventy": "^3.1.0",
-    "@11ty/eleventy-navigation": "^0.3.5",
-    "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "js-yaml": "^4.1.0",
-    "luxon": "^3.4.4",
-    "markdown-it": "^14.0.0",
-    "markdown-it-anchor": "^8.6.7"
-  }
+	"name": "11ty-brutalist-blog-starter",
+	"version": "0.0.1",
+	"description": "Eleventy Brutalist blog starter by Adam DJ Brett.",
+	"type": "module",
+	"scripts": {
+		"build": "npx @11ty/eleventy",
+		"build-nocolor": "cross-env NODE_DISABLE_COLORS=1 npx @11ty/eleventy",
+		"build-ghpages": "npx @11ty/eleventy --pathprefix=/11ty-brutalist-blog-starter/",
+		"start": "npx @11ty/eleventy --serve --quiet",
+		"start-ghpages": "npx @11ty/eleventy --pathprefix=/11ty-brutalist-blog-starter/ --serve --quiet",
+		"debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
+		"debugstart": "cross-env DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
+		"benchmark": "cross-env DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/adamdjbrett/11ty-brutalist-blog-starter.git"
+	},
+	"author": {
+		"name": "Adam Dj Brett",
+		"email": "info@adamdjbrett.com",
+		"url": "https://adamdjbrett.com/"
+	},
+	"license": "MIT",
+	"engines": {
+		"node": ">=18"
+	},
+	"devDependencies": {
+		"@11ty/eleventy": "^3.0.0",
+		"@11ty/eleventy-img": "^5.0.0",
+		"@11ty/eleventy-navigation": "^0.3.5",
+		"@11ty/eleventy-plugin-rss": "^2.0.2",
+		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+		"cross-env": "^7.0.3",
+		"luxon": "^3.5.0",
+		"zod": "^3.23.8",
+		"markdown-it": "^14.1.0",
+		"markdown-it-attrs": "^4.3.1",
+		"zod-validation-error": "^3.3.1"
+	},
+	"dependencies": {
+		"clean-css": "^5.3.3",
+		"@zachleat/heading-anchors": "^1.0.1",
+		"eleventy-plugin-toc": "^1.1.5",
+		"markdown-it": "^14.1.0",
+		"markdown-it-anchor": "^9.2.0",
+		"markdown-it-container": "^4.0.0",
+		"markdown-it-footnote": "^4.0.0",
+		"string-strip-html": "^13.4.8"
+	}
 }
