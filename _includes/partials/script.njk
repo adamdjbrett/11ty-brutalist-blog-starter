@@ -1,34 +1,30 @@
 <script>
-const themeBtn = document.getElementById('theme-toggle');
-const root = document.documentElement;
-
-// Set awal
-if (localStorage.getItem('theme') === 'dark') {
-  root.setAttribute('data-theme', 'dark');
-} else {
-  root.removeAttribute('data-theme');
-}
-updateButtonText();
-
-themeBtn.addEventListener('click', function() {
-  let currentTheme = root.getAttribute('data-theme');
-  if (currentTheme === 'dark') {
-    root.removeAttribute('data-theme');
-    localStorage.setItem('theme', 'light');
-  } else {
-    root.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
+  // Function to set theme
+  function setTheme(themeName) {
+    localStorage.setItem('theme', themeName);
+    document.documentElement.setAttribute('data-theme', themeName);
   }
-  updateButtonText();
-});
 
-function updateButtonText() {
-  let theme = root.getAttribute('data-theme');
-  if (theme === 'dark') {
-    themeBtn.textContent = '☀️ Light Mode';
-  } else {
-    themeBtn.textContent = '🌙 Dark Mode';
+  // Function to toggle theme
+  function toggleTheme() {
+    if (localStorage.getItem('theme') === 'dark') {
+      setTheme('light');
+    } else {
+      setTheme('dark');
+    }
   }
-}
 
+  // Immediately invoked function to set the theme on initial load
+  (function () {
+    // Check for saved theme preference or use system preference
+    if (localStorage.getItem('theme') === 'dark' || 
+        (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+    
+    // Add event listener for theme toggle button
+    document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+  })();
 </script>
