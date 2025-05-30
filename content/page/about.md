@@ -2,6 +2,7 @@
 layout: page
 title: About
 description: Learn more about this brutalist blog
+permalink: /about/
 ---
 
 This is a brutalist blog built with 11ty. Brutalism in web design is characterized by its raw, utilitarian aesthetic with minimal styling, high contrast, and often unconventional layouts.
