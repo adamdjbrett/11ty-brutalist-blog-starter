@@ -12,9 +12,10 @@
 </a>
 </li>
 {% endfor %}
-<li class="site-nav__item">
-<button id="theme-toggle" aria-label="Toggle dark/light mode" style="margin-left: 1rem; border: 2px solid var(--color-black); background: var(--color-gray-light); color: var(--color-black); font-family: inherit; padding: 0.4em 1em; cursor: pointer;">
-  🌙 Dark Mode
+<li class="site-nav__item theme-toggle-container">
+<button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode">
+<span class="theme-toggle-dark">🌙</span>
+<span class="theme-toggle-light">☀️</span>
 </button>
 </li>
 </ul>
