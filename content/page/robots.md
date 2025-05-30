@@ -1,12 +1,12 @@
 ---
 permalink: /robots.txt
 eleventyExcludeFromCollections: true
-layout: null
+layout: false
 ---
 
 # Allow crawling of all content
 User-agent: *
 Allow: /
 
-Sitemap: {{metadata.url}}/sitemap.xml
 
+Sitemap: {{metadata.url}}/sitemap.xml

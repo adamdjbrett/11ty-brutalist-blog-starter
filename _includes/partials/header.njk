@@ -1,0 +1,23 @@
+<header class="site-header">
+<div class="site-header__inner">
+<a href="/" class="site-title">{{metadata.navbar.title}}</a>
+<nav class="site-nav">
+<ul class="site-nav__list">
+{% for n in metadata.navbar.list %}
+{% set normalizedNavUrl = n.url | replace("/", "") %}
+{% set normalizedPageUrl = page.url | replace("/", "") %}
+<li class="site-nav__item">
+<a href="{{ n.url }}" class="site-nav__link {% if normalizedPageUrl == normalizedNavUrl %}active{% endif %}">
+{{ n.nav }}
+</a>
+</li>
+{% endfor %}
+<li class="site-nav__item">
+<button id="theme-toggle" aria-label="Toggle dark/light mode" style="margin-left: 1rem; border: 2px solid var(--color-black); background: var(--color-gray-light); color: var(--color-black); font-family: inherit; padding: 0.4em 1em; cursor: pointer;">
+  🌙 Dark Mode
+</button>
+</li>
+</ul>
+</nav>
+</div>
+</header>
